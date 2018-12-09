@@ -1,0 +1,26 @@
+#! /bin/bash
+#SBATCH -J B422
+#SBATCH -o B422o.output
+#SBATCH -e B422e.output
+# Default in slurm
+#SBATCH --mail-user niranjan.programming@gmail.com
+#SBATCH --mail-type=ALL
+# Request 5 hours run time
+#SBATCH -n 90
+#SBATCH --export=ALL
+#SBATCH -p long.q
+# NOTE: You will need to decide which queue your job
+# runs on based on the wall-clock time limitations 
+# This submission file will run a simple set of commands. All longout will
+# be captured in test1.qlog (as specified in the SGE command -o above).
+# This job file uses a shared-memory parallel environment and requests 20
+# cores on a single node. This job will also run a global script called
+# merced_node_print that will let the user log the node where a job is
+# run. For more info on this script, cat /usr/local/bin/merced_node_print.
+#
+whoami
+pwd
+uptime
+merced_node_print -d
+module load anaconda2
+python main_script_onrate.py B422.txt 90

@@ -1,0 +1,13 @@
+Diffusion constant (m^2/s),D,1.3e-12
+velocity (m/s),v,0.7e-6
+radius(m),R,20e-6
+time step,dt,1e-5
+Number of microtubules,N,96
+nucleus radius (m),delta,5e-6
+maximum time(s),max_time,1000
+sample size,samplesiz,1000
+sample rate,samrate,1000
+ballistic time constant,rate_const,1
+on rate(per s),onrate,5
+microtubule radius(m),mtr,10e-9
+simulation name,simname,sim5
