@@ -1,7 +1,7 @@
 # BEST230
 #The program simulates transport of virus particle in cell.
 
- wedge_transport_class.py has functions which perform diffusive and ballistic steps, and check whether the particle is in diffusive phase or not.
+#wedge_transport_class.py has basic functions which perform diffusive and ballistic steps etc.
  
 #main_script_pre_model simulates transport according to this paper: PHYSICAL REVIEW E 92, 042709 (2015) 
 
